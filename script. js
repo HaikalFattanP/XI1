@@ -1,0 +1,33 @@
+const teks1 = "Hai, Selamat datang di XIONITY";
+const teks2 = "Ini adalah web XI 1";
+let i = 0;
+let j = 0;
+
+function ketikTeks1() {
+  if (i === 0) {
+    document.getElementById("typing-text1").innerHTML = "";
+  }
+
+  if (i < teks1.length) {
+    document.getElementById("typing-text1").innerHTML += teks1.charAt(i);
+    i++;
+    setTimeout(ketikTeks1, 100);
+  } else {
+    setTimeout(ketikTeks2, 1000);
+  }
+}
+
+function ketikTeks2() {
+  if (j === 0) {
+    document.getElementById("typing-text2").style.visibility = "visible"; // Munculkan
+    document.getElementById("typing-text2").innerHTML = "";
+  }
+
+  if (j < teks2.length) {
+    document.getElementById("typing-text2").innerHTML += teks2.charAt(j);
+    j++;
+    setTimeout(ketikTeks2, 100);
+  }
+}
+
+window.onload = ketikTeks1;
