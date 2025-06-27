@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+}
+
+html,body{
+  
+  margin: 0;
+}
+/* animasi */
+
+.gradient-text {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #3e4a89, #8ca6db, #b8c6db);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#typing-text2 {
+  visibility: hidden;
+}
+
+#typing-text1::after,
+#typing-text2::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* end animasi */
+
+.nav-bar{
+  display: flex;
+  padding-bottom:1rem;
+  padding-top: 1rem;
+  height: 3rem;
+  width: 100vw;
+  background-color: #28283c;
+}
+
+.logo {
+  
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.logos {
+  width: 2rem;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.menu-list{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+}
+
+.menu {
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+  margin: 1.5rem;
+  text-decoration: none;
+}
+
+.menu:hover{
+  font-size: 1.1rem;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 1s;
+}
+
+.containerHome {
+  padding-top: 1rem;
+  background-color: #3c3c50;
+  width: auto;
+  height: 100vh;
+  flex: 1;
+}
+
+.text-section1 {
+  justify-content: center;
+  text-align: center;
+  height:auto;
+  width:auto;
+}
+
+
+.text1 {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color: white;
+  font-size: 2rem;
+  margin: 1rem
+}
+
+.text2 {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color:white;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.footer {
+  width: 100vw;
+  height:25vh;
+  background-color:black ;
+}
+
+  
+  
+  
