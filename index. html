@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>haikal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="nav-bar">
+   <div class="logo">
+  <h1 class="logos"> <b>XIONITY</b></h1>
+    </div>
+    <div class="menu-list">
+    <a class="menu" href="#">Home</a>
+    <a class="menu" href="#">About us</a>
+    <a class="menu" href="#">Contact</a>
+    </div>
+  </div>
+  <div class="containerHome">
+    <div class="text-section1">
+    <div class="text1 fade-in">
+      <p id="typing-text1" class="gradient-text">Hai,Selamat datang di XIONITY</p>
+      </div>
+      <div class="typing-text2 fade-in">
+      <p id="typing-text2" class="gradient-text">Ini adalah web XI 1 </p>
+    </div>
+    </div>
+    
+    <div class="text-section2">
+      
+      
+      
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
